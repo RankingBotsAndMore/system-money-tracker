@@ -71,11 +71,13 @@
 <script>
 // ---------------- DATA ----------------
 const DEFAULT_TASKS = [
-  { name: "Shower", amount: 5 },
-  { name: "Ate", amount: 3 },
-  { name: "Chores", amount: 10 },
-  { name: "School", amount: 15 },
-  { name: "Rest / Existing", amount: 5 }
+  { name: "Showering", amount: 10 },
+  { name: "Skincare", amount: 5 },
+  { name: "Exercising", amount: 15 },
+  { name: "School", amount: 10},
+  { name: "Laying out cloths for tomorrow", amount: 20},
+  { name: "Cleaning. (Enter how much you cleaned.)", amount: 5},
+  { name: "Eating", amount: 5 }
 ];
 
 let state = JSON.parse(localStorage.getItem("systemMoney")) || {
@@ -121,7 +123,7 @@ let state = JSON.parse(localStorage.getItem("systemMoney")) || {
     Starla: { balance: 0, notifications: [] },
     Sun: { balance: 0, notifications: [] },
     Sunny: { balance: 0, notifications: [] },
-    Teto: { balance: 0, notifications: ["BITCH IM WATCHING YOU -MIKU."] },
+    Teto: { balance: 0, notifications: ["i see you, and we are going to the bed tonight -miku"] },
     "The Puppet": { balance: 0, notifications: [] },
     "Toy Bonnie": { balance: 0, notifications: [] },
     "Toy Chica": { balance: 0, notifications: [] },
