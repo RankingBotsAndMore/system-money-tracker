@@ -1,4 +1,4 @@
-const CACHE = "money-tracker-v2.11";
+const CACHE = "money-tracker-v2.12";
 
 self.addEventListener("install", e => {
   self.skipWaiting();
@@ -23,4 +23,5 @@ self.addEventListener("fetch", e => {
     caches.match(e.request).then(r => r || fetch(e.request))
   );
 });
+
 
